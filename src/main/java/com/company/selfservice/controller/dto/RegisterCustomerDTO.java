@@ -1,9 +1,7 @@
 package com.company.selfservice.controller.dto;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 import com.company.selfservice.domain.Address;
@@ -21,7 +19,7 @@ public class RegisterCustomerDTO implements Serializable{
 	
 	private String email;
 	
-	Set<Address> addresses = new LinkedHashSet<Address>();
+	private Set<Address> addresses = new LinkedHashSet<Address>();
 	
 	private String pwd;
 	

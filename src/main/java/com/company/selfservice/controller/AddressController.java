@@ -40,12 +40,6 @@ public class AddressController {
 		
 		
 		Address address = this.addressService.updateAddress(inputAddress);
-
-		URI location = ServletUriComponentsBuilder
-			.fromCurrentRequest().path("/{id}")
-			.buildAndExpand(address.getId()).toUri();
-
-		//return ResponseEntity.created(location).build();
 		return new ResponseEntity<Address>(address, HttpStatus.CREATED);
 		
 	}
