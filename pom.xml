@@ -17,6 +17,17 @@
 		<version>1.5.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
+	<distributionManagement>
+             <snapshotRepository>
+                 <id>ServiceSnapshot</id>
+                 <url>http://34.200.232.169:8081/nexus/content/repositories/CustomerServiceSnapshot/</url>
+             </snapshotRepository>
+		<repository>
+                  <id>ServiceRelease</id>
+                  <url>http://34.200.232.169:8081/nexus/content/repositories/CustomerServiceRelease/</url>
+                </repository>
+        </distributionManagement>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
